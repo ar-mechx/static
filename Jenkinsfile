@@ -1,6 +1,6 @@
 pipeline {
-    agent any
-    stages {
+     agent any
+     stages {
          stage('Lint HTML') {
               steps {
                   sh 'tidy -q -e *.html'
@@ -12,6 +12,6 @@ pipeline {
                      echo "Multiline shell steps works too"
                      ls -lah
                  '''
-          }
-        }
+             }
+         }
 }
